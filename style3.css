@@ -1,0 +1,17 @@
+@charset "utf-8";
+
+h1{
+    color: white;
+    text-align: center;
+}
+p{
+    color: rgb(156, 222, 237);
+}
+h2{
+    color: white;
+}
+body{
+    background-image: url("./長所.jpg");
+    background-size: cover;
+
+}

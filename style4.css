@@ -1,0 +1,10 @@
+@charset "utf-8";
+body{
+    background-image: url("./趣味.jpg");
+    background-size: cover;
+    ;
+
+}
+h1{
+    text-align: center;
+}

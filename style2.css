@@ -1,0 +1,13 @@
+@charset "utf-8";
+
+h1{
+    text-align: center;
+}
+h2{
+    color: rgb(20, 76, 217);
+}
+body{
+    background-image: url("./shutterstock_1769365727.jpg");
+    background-size: cover;
+    
+}

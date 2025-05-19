@@ -1,0 +1,54 @@
+@charset"utf-8";
+
+body{
+    background-color: white;
+    h2{
+        color: black;
+        background-color: lightblue;
+    }
+    h2{
+        border: medium #10cae6 dotted;
+    }
+
+}
+
+@keyframes bounce{
+    0%{ transform: translate(0);}
+    50%{ transform: translate(6000px);}
+    100%{ transform: translate(5999px);}
+}
+.bounce-animation{
+    animation: bounce 20s ease;
+
+}
+.image-container {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    border: 1px solid #ccc;
+  }
+  
+  #myImage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: left 1s ease;
+    width: 100px; /* 画像サイズ調整 */
+  }
+
+
+  .like-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: background-color 0.3s ease; /* 色の変化を滑らかにするためのアニメーション */
+}
+
+.like-button.liked {
+    background-color: #007bff; /* いいねされた時の色 */
+    color: white; /* いいねされた時の文字色 */
+}
