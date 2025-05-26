@@ -68,18 +68,3 @@ likeButton.addEventListener('click', () => {
 
 
 
-//３ページ以上遷移したユーザーのキーイベント//
-function() {
-  try {
-    var pageViews = sessionStorage.getItem('gtm_page_views');
-    if (pageViews) {
-      pageViews = parseInt(pageViews) + 1;
-    } else {
-      pageViews = 1;
-    }
-    sessionStorage.setItem('gtm_page_views', pageViews);
-    return pageViews;
-  } catch (e) {
-    return undefined;
-  }
-}
