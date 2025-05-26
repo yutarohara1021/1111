@@ -40,9 +40,28 @@ btn.addEventListener("click", () => {
 
 
 
+//リアクションボタンNOデータレイヤー送信//
+const likeButton = document.getElementById('likeButton');
+
+likeButton.addEventListener('click', () => {
+    likeButton.classList.toggle('liked');
+});
+
+
+
 
 const likeButton = document.getElementById('likeButton');
 
 likeButton.addEventListener('click', () => {
     likeButton.classList.toggle('liked');
+
+    // ★★★ ここから追加 ★★★
+    // データレイヤーにイベントをプッシュ
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({
+        'event': 'user_reaction',     // GTMで受け取るカスタムイベント名
+        'reaction_type': 'like',      // リアクションの種類（カスタムディメンション用）
+        'reaction_value': 1           // リアクションの数値（カスタムメトリクス用）
+    });
+    // ★★★ ここまで追加 ★★★
 });
